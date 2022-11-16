@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,*p,*q,sum;
+    
+    printf("enter two integer to add");
+    scanf("%d %d",&a,&b);
+    
+    
+   p=&a;
+   q=&b;
+   sum=*p+*q;
+   printf("sum of two integer is %d\n",sum);
+
+   return 0;
+}
