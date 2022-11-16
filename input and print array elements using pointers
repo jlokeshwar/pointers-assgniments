@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define size 10
+int main()
+{
+    int arr[size],i;
+    int *ptr=arr;
+    
+    
+    printf("enter the elements in arrays\n");
+    for( i=0;i<size;i++)
+    {
+    scanf("%d",&arr[i]);
+    ptr++;
+    
+    }
+      ptr=arr;
+      printf("arrays elements ");
+      for(i=0;i<size;i++)
+  {
+      printf(" %d ",*ptr);
+      
+      ptr++;
+  }
+  
+  
+   return 0;
+}
